@@ -18,7 +18,7 @@ function studentGrading (studentName, studentScore) {
   
   }
   
-  studentGrading("Alie", 88)
+  studentGrading("Allie", 88)
   studentGrading("Fatima", 92)
   studentGrading("John", 75)
   studentGrading("Sara", 95)
