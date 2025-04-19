@@ -1,32 +1,25 @@
-let colors = ["green", "blue", "pink"]
-console.log (colors[0])
-console.log (colors)
-
-let person = {
-    Name: "Allie Efferson",
-    Age: 35,
-    isEnrolled: "Software Engineer"
-}
-
-let students = [
-    {Name: "Justin Hoffman", 
-    Age: 33, 
-    isEnrolled: true},
-    {Name: "Jane Smith", 
-    Age: 22, 
-    isEnrolled: false},
-    {Name: "Daniel Brown", 
-    Age: 30, 
-    isEnrolled: true},
-]
-
-// Information on All Studnets
-console.log (students)
-console.log (students[0].Name)
-console.log (students[1].Age)
-console.log (students[2].isEnrolled)
-
-// Data Typles of 1st Students Attributes
-console.log(typeof students[0].Name)
-console.log(typeof students[0].Age)
-console.log(typeof students[0].isEnrolled)
+function studentGrading (studentName, studentScore) {
+    // 90 - 100.           A
+    // 80 - 89.            B
+    // 70 - 79             C
+  
+    let studentGrade 
+  
+    if ((studentScore>=90) && (studentScore <=100)) 
+      studentGrade = "A"
+    else if ((studentScore >=80) && (studentScore < 90)) 
+      studentGrade = "B"
+    else if (studentScore >=70 && studentScore < 80) 
+      studentGrade = "C"
+    else 
+      studentGrade = "F"
+    
+    console.log (`Hello ${studentName}, your score is ${studentScore} and your grade is ${studentGrade}`)
+  
+  }
+  
+  studentGrading("Alie", 88)
+  studentGrading("Fatima", 92)
+  studentGrading("John", 75)
+  studentGrading("Sara", 95)
+  studentGrading("David", 68)
